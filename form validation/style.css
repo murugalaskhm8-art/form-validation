@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    font-family: Arial;
+}
+
+input {
+    padding: 10px;
+}
+
+p {
+    color: red;
+}
+
+button {
+    padding: 10px;
+}
