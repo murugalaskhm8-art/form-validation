@@ -1,10 +1,16 @@
-let password = document.getElementById("password").value;
+let form = document.getElementById("myForm");
 
-let error = document.getElementById("error");
+form.addEventListener("submit", function(event) {
 
-if (password.length <= 8) {
-    alert("Password is valid");
-}
-else {
-    alert("Password must contain at least 8 characters");
-}
+    event.preventDefault();
+
+    let password = document.getElementById("password").value;
+
+    if (password.length <= 8) {
+        alert("Password is valid");
+    }
+    else {
+        alert("Password must contain at least 8 characters");
+    }
+
+});
